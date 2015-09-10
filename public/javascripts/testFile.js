@@ -1,4 +1,25 @@
 
+var ar=[
+'1',
+'null',
+'true',
+'"\'quiz\'"',
+'undefined',
+'Symbol.for("blackbook")',
+'new String("Vertech")',
+'new Boolean(true)',
+'new Number (2)',
+'new Date(2015)',
+' function X(){return true;}',
+'new Object()',
+ 'var  arr= ["asher","harish","avani"];',
+]
+
+for (i=0; i<ar.length; i++){
+document.write("<br/>"+(i+1)+".\t");
+document.write("\t<input id='chk" + i + "' type='checkbox' value='0'/>\t");
+document.write(ar[i]);
+}
 
 function testPrim(arg){
 	console.log("arg:",arg);

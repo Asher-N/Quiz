@@ -30,7 +30,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
         'public/javascripts/*.js' : 'coverage',
-        '**/*.html'   : ['html2js']
+        'public/index.html'   : ['html2js']
     },
 
 
