@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'public/javascripts/jquery.js' ,
       'public/javascripts/exercise.js',
       'test/client/exercise.spec.js'
       //'public/index.html',

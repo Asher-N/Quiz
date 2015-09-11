@@ -9,9 +9,9 @@ describe("Callback UnitTest", function() {
 
 it ("should have html", function(done){
         angularFunc(function(res){
+            //console.log(res);
             expect(res).toContain('user');
             done();
         });
     });
-
 });
