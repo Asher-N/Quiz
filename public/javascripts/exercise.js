@@ -1,17 +1,11 @@
 var aCallback = function(res) {
   if(document.getElementById('dvResult') !=null)
-    {
-      document.getElementById('dvResult').innerHTML=JSON.stringify(res);
-    }
-    console.log(JSON.stringify(res));
-};
+    document.getElementById('dvResult').innerHTML=JSON.stringify(res);
+    };
 
-var aCallback1 = function(res) {
+var aCallbackangular = function(res) {
   if(document.getElementById('dvResult1') !=null)
-    {
       document.getElementById('dvResult1').innerHTML=JSON.stringify(res);
-    }
-    console.log(JSON.stringify(res));
 };
 
 var namedFunc = (function namedFunc(cb) {
@@ -30,13 +24,11 @@ var namedFunc = (function namedFunc(cb) {
 
 var angularFunc = (function angularFunc(cb){
 var promise = $.get('http://httpbin.org/user-agent');
-console.log('promise is',promise);
     promise.then(
       function(payload) {
-        console.log('payload is',payload);
         cb(payload) 
       });
-})(aCallback1);
+})(aCallbackangular);
 
 // function angularFunc() {
 //     var promise = $.get('http://httpbin.org/user-agent');
